@@ -1,0 +1,113 @@
+body{
+    background-color: #FF6D11;
+    margin: 0%;
+    display: grid;
+    grid-template-areas:'nav nav nav nav'
+    'header section segunda div '
+    'footer footer footer footer';
+    grid-template-rows: 20vh 70vh 40vh;
+}
+
+aside{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+}
+header{
+    background-color: #E83A04;
+    grid-area: header;
+}
+nav a{
+    color: #170C4E;
+    text-decoration: none;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+}
+nav a:hover{
+    color: #5C6AC3;
+    transition: 1.5s;
+    font-family: 'Reem Kufi', sans-serif;
+}
+img{
+    width:300px;
+    height:200px;
+    border-radius: 5%;
+    background-size: cover;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+header, section, .segunda, div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Reem Kufi', sans-serif;
+    color: #170C4E;
+}
+nav{
+    grid-area: nav;
+    background-color: #FFA704;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+section{
+    grid-area: section;
+    background-color: #FF6D11;
+}
+.segunda{
+    grid-area: segunda;
+    background-color: #E83A04;
+}
+div{
+    grid-area: div;
+    background-color:#FF6D11;
+    
+}
+footer{
+    grid-area: footer;
+    background-color: #FBEC27;
+    font-family: 'Reem Kufi', sans-serif;
+    color: #170C4E;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    font-family: 'Reem Kufi', sans-serif;
+    color: #170C4E;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.texto{
+    font-family: 'Reem Kufi', sans-serif;
+    color: #170C4E;
+    font-size: 16px;
+}
+
+@media( max-width: 768px){  
+    Body{
+        grid-template-areas:'nav nav nav nav'
+        'header header header header'
+        'section section section section'
+        'segunda segunda segunda segunda'
+        'div div div div'
+        'footer footer footer footer';
+        grid-template-rows: 20vh 70vh 70vh 70vh 70vh 100vh;
+        margin: 0%;
+    }
+    
+    nav{
+        align-items: center;
+        flex-direction: column;    
+    }
+    
+    aside{
+        flex-direction: column;
+    }
+}
